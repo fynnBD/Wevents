@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#000000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffdd00"
+        android:layout_margin="5dp"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/poster_view"
+                    android:layout_width="367dp"
+                    android:layout_height="269dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@drawable/company_poster" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffdd00">
+
+                    <Button
+                        android:id="@+id/exit_button"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:background="@color/black"
+                        android:text="x"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/name_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:gravity="center"
+                            android:text="COMPANY"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/org_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="39dp"
+                            android:gravity="center"
+                            android:text="Wellington Footlights Society"
+                            app:autoSizeTextType="uniform" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Mollis aliquam ut porttitor leo a diam. Mauris a diam maecenas sed. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. Orci dapibus ultrices in iaculis nunc sed augue lacus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Eros donec ac odio tempor orci dapibus. In fermentum et sollicitudin ac orci phasellus egestas. Dignissim sodales ut eu sem integer vitae. Integer eget aliquet nibh praesent. Eget dolor morbi non arcu risus. Quam lacus suspendisse faucibus interdum posuere. Amet consectetur adipiscing elit ut aliquam purus sit amet. Sem integer vitae justo eget magna fermentum iaculis eu. Ultrices eros in cursus turpis massa tincidunt dui ut ornare.\n\nElit at imperdiet dui accumsan. Amet porttitor eget dolor morbi non arcu risus. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Quis blandit turpis cursus in. Molestie at elementum eu facilisis. Non sodales neque sodales ut etiam sit. Scelerisque viverra mauris in aliquam. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus. Aliquet nec ullamcorper sit amet risus nullam eget felis. Sed nisi lacus sed viverra tellus in hac habitasse platea. Mauris ultrices eros in cursus. Aliquet porttitor lacus luctus accumsan tortor posuere. At varius vel pharetra vel turpis nunc eget lorem."
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:text="GET TICKETS"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "905642624600",
+    "project_id": "wevents-86b00",
+    "storage_bucket": "wevents-86b00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905642624600:android:64eaf5cb85d1a654d6ac2d",
+        "android_client_info": {
+          "package_name": "com.example.wevents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905642624600-uosqie71qg5hlqgfrer4e1d9n7pni3ag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmVTntQmbkhweiqfh1oRtjPBl3LMAQvyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905642624600-uosqie71qg5hlqgfrer4e1d9n7pni3ag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

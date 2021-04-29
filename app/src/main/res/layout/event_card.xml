@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="200dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_bg"
+    android:padding="10dp"
+    android:layout_margin="5dp" >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <ImageView
+            android:id="@+id/Image_Thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/company_poster" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/Event_Name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:autoSizeTextType="uniform"
+                android:text="COMPANY"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Event_Org"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:autoSizeTextType="uniform"
+                android:text="Wellington Footlights Society"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Dates"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autoSizeTextType="uniform"
+                android:text="16JUN - 29JUN"
+                android:textSize="36sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/infoButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/black"
+                android:text="INFO"
+                android:textColor="@color/white"
+                app:backgroundTint="#020202" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
